@@ -1,0 +1,129 @@
+@viewport {
+    width: device-width;
+}
+    
+html {
+overflow-y: auto;
+}
+
+img,
+video,
+canvas {
+    max-width: 100%;
+}
+
+audio{
+	max-width: 50%;
+}
+
+html, body {
+    height: 100%;
+}
+
+input[type=checkbox] {
+	transform: scale(1.5);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0%;
+    display: flex;
+    flex-direction: column;    
+    background-color: #303030;    
+}
+
+#menu {
+    background-color: #499bea;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#mainArea {
+    flex-grow: 1;
+    display: flex;    
+    flex-flow: column;
+}
+
+#tabla{    
+    display: flex;
+    flex-direction: column;   
+}
+#fila{   
+    display: flex;
+    justify-content: center;    
+	padding-top: 0.25em;
+}
+
+#containerPlay {
+	display: flex;
+	flex-flow: column-reverse wrap;
+}
+
+#itemPlay {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+    margin: 0.5vw;
+	padding: 0.5vw;
+	// border-style: solid;
+}
+
+#fecha{
+	color: white;	
+	font-family: "Lucida Console", Monaco, monospace;	
+	font-size: 1em;
+}
+#borrarAudio {
+	display: flex;
+	justify-content: center;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: white;    
+}
+
+#imgBorrar{
+    flex-grow: 1;
+}
+
+#statusBar {       
+    display: flex;     
+    justify-content: space-between;
+    background-color: #499bea;
+}
+//Pantalla Pequeña
+#menu * {
+    width: 2em;
+    height: 2em;    
+	background: white;
+	border-radius: 50%;
+}
+//Pantalla Grande
+@media all and (min-width: 500px) {
+
+    #statusBar {
+        font-size: 1.2em;
+    }
+
+    #menu * {
+        width: 3em;
+        height: 3em;           
+    }
+}
