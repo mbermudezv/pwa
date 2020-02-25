@@ -3,8 +3,8 @@ var camaraActivar, camaraFoto;
 const camaraControl = () =>
   new Promise(async resolve => {
 
-    const stream = await navigator.mediaDevices.getUserMedia({ audio: false, video: { facingMode: { 
-      exact: 'environment' } } } );
+    
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: false, video: { facingMode: { exact: 'environment' } } } );
     
     if (navigator.mozGetUserMedia) {
       video.mozSrcObject = stream;
