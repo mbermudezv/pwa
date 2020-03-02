@@ -67,7 +67,8 @@ else {
 </div>
 <div id="statusBar">                              
 </div>
-<script type="text/javascript" src="https://unpkg.com/@zxing/library@latest"></script>
+<!-- <script type="text/javascript" src="https://unpkg.com/@zxing/library@latest"></script> -->
+<script async src="js/zxing.js"></script>
 <script>
 
 var streaming = false,
